@@ -1,0 +1,74 @@
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.ontslohMedee2 {
+  margin-top: 30px;
+  height: 36px;
+}
+
+.cata {
+  background-image: url("https://www.yolo.mn/stat/app/img/cata.png");
+  background-repeat: no-repeat;
+  display: block;
+  height: 40px;
+  float: left;
+  color: #000000;
+  background-size: 60px;
+}
+
+.cataChild {
+  transition: 2s;
+  background-image: url("https://www.yolo.mn/stat/app/img/catheader.png");
+  background-repeat: no-repeat;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left: 75px;
+  float: left;
+  margin: 0;
+  padding-right: 40px;
+  background-position: 65px 0;
+}
+.medeeDesc {
+  height: 90px;
+  overflow: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #9b9b9b;
+  font-weight: 300;
+  font-size: 11px;
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+
+.medeeReaction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.reaction-row-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reactionText,
+.reaction-row-2 {
+  font-size: 11px;
+  font-style: italic;
+  color: black;
+  margin-left: 3px;
+  margin-right: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.reaction-row-2 {
+  font-weight: 300;
+  font-size: 12px;
+}
