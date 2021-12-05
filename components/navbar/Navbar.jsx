@@ -15,6 +15,9 @@ const Navbar = () => {
         <Link to="/firstPage">
           <button className="linkButton">ЭНТЕРТАЙНМЕНТ</button>
         </Link>
+        <Link to="/firstPage">
+          <button className="linkButton">БОЛОВСРОЛ</button>
+        </Link>
         <Link to="/secondPage">
           <button className="linkButton">ХУВЬ ХҮНИЙ ХӨГЖИЛ</button>
         </Link>
@@ -29,9 +32,6 @@ const Navbar = () => {
         </Link>
         <Link to="/secondPage">
           <button className="linkButton">КОМИК</button>
-        </Link>
-        <Link to="/secondPage">
-          <button className="linkButton">БОЛОВСРОЛ</button>
         </Link>
         <span className="searchIcon">
           <BiSearch />
