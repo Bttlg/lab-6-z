@@ -1,44 +1,78 @@
 import React from "react";
+import { ReactDOM } from "react";
 import { Link } from "react-router-dom";
-import { BiSearch, BiExit } from "react-icons/bi";
+import { BsFacebook, BsFillBellFill, BsMessenger } from "react-icons/bs";
+import {
+  AiOutlineSearch,
+  AiOutlineShop,
+  AiOutlineHome,
+  AiFillCaretDown,
+} from "react-icons/Ai";
+import { FiUsers } from "react-icons/Fi";
+import { MdOutlineOndemandVideo } from "react-icons/Md";
+import { HiOutlineUserGroup } from "react-icons/Hi";
+import { CgMenuGridO } from "react-icons/cg";
 
 import "./Navbar.css";
 
 const Navbar = () => {
+  const homeFocus = () => {
+    var select = document.querySelector(".firstChild");
+    select.classList.add("focus");
+  };
   return (
     <div className="navbarContainer">
-      <div className="logoContainer">
-        <img src="../../image/logo.png" height="100%" width="70%" />
-        <p className="logoDesc">Өсвөр үе,залууст ...</p>
+      <div className="row-1">
+        <BsFacebook className="facebookIcon" />
+        <div className="searchContainer">
+          <AiOutlineSearch className="searchIcon" />
+          <input
+            type="search"
+            className="searchInput"
+            placeholder="Search Facebook"
+          />
+        </div>
       </div>
-      <div className="buttonContainer">
-        <Link to="/firstPage">
-          <button className="linkButton">ЭНТЕРТАЙНМЕНТ</button>
+      <div className="row-2">
+        <Link
+          to="/Body"
+          className="iconItems firstChild focus"
+          onClick={homeFocus}
+        >
+          <AiOutlineHome className="homeIcon" />
         </Link>
-        <Link to="/firstPage">
-          <button className="linkButton">БОЛОВСРОЛ</button>
-        </Link>
-        <Link to="/secondPage">
-          <button className="linkButton">ХУВЬ ХҮНИЙ ХӨГЖИЛ</button>
-        </Link>
-        <Link to="/secondPage">
-          <button className="linkButton">ЯРИЛЦЛАГА</button>
-        </Link>
-        <Link to="/secondPage">
-          <button className="linkButton">СОНИН ХАЧИН</button>
-        </Link>
-        <Link to="/secondPage">
-          <button className="linkButton">ЗӨВЛӨГӨӨ</button>
-        </Link>
-        <Link to="/secondPage">
-          <button className="linkButton">КОМИК</button>
-        </Link>
-        <span className="searchIcon">
-          <BiSearch />
-        </span>
-        <span className="exitIcon">
-          <BiExit />
-        </span>
+
+        <div className="iconItems">
+          <FiUsers className="friendIcon" />
+        </div>
+        <div className="iconItems">
+          <MdOutlineOndemandVideo className="videoIcon" />
+        </div>
+        <div className="iconItems">
+          <AiOutlineShop className="shopIcon" />
+        </div>
+        <div className="iconItems">
+          <HiOutlineUserGroup className="groupIcon" />
+        </div>
+      </div>
+      <div className="row-3">
+        <div className="profile">
+          <a
+            href="https://www.facebook.com/boloroo.ideal"
+            className="myProfile"
+          >
+            <img
+              src="https://scontent.fuln2-2.fna.fbcdn.net/v/t39.30808-6/230655616_3031368647122304_4760625365906183685_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Bx6ESIuFmssAX-Mcvrd&tn=fSxRefxBAb73dOpM&_nc_ht=scontent.fuln2-2.fna&oh=00_AT8Xkh-0OD2pIsDSAAV_S9RVgEbn4OeAsSg4riuxLdQ5dQ&oe=61C361B3"
+              alt="profilePic"
+              className="profilePic"
+            />
+            <p className="profileName">Bol</p>
+          </a>
+        </div>
+        <CgMenuGridO className="menuIcon" />
+        <BsMessenger className="messengerIcon" />
+        <BsFillBellFill className="notificationIcon" />
+        <AiFillCaretDown className="settingsIcon" />
       </div>
     </div>
   );

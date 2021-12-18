@@ -13,23 +13,25 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import FirstPage from "../firstPage/FirstPage";
-import SecondPage from "../secondPage/SecondPage";
 import Navbar from "../navbar/Navbar";
+import Profile from "../profile/Profile";
+import Body from "../body/Body";
+import UserPost from "../userPost/UserPost";
 
 const Header = () => {
+  const { innerWidth: width, innerHeight: height } = window;
   return (
-    <div className="headerContainer">
-      <HashRouter>
-        <Navbar />
-        <div className="componentContainer">
-          <Switch>
-            <Route path="/firstPage" component={FirstPage} />
-            <Route path="/secondPage" component={SecondPage} />
-          </Switch>
-        </div>
-      </HashRouter>
-    </div>
+    <HashRouter>
+      <Navbar />
+      <div className="componentContainer">
+        <Switch>
+          <Route exact path="/" component={Body} />
+          <Route path="/Body" component={Body} />
+          <Route path="/Profile/:id" component={Profile} />
+          <Route path="/UserPost/:id" component={UserPost} />
+        </Switch>
+      </div>
+    </HashRouter>
   );
 };
 

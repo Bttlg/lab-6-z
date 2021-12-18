@@ -5,6 +5,7 @@
 }
 
 .componentContainer {
-  width: 80%;
-  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

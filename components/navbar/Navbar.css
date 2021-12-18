@@ -1,53 +1,183 @@
 .navbarContainer {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  margin-top: 50px;
+  width: 100%;
+  margin-top: -9px;
+  margin-left: -9px;
+  margin-right: -7px;
+  /* margin: 0px 5px 0px 5px; */
   align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  box-shadow: 0 4px 2px -2px gray;
+  height: 60px;
+  background-color: white;
+  position: fixed;
 }
 
-.logoContainer {
-  display: flex;
-  flex-direction: column;
-  height: 10%;
-  width: 15%;
-}
-
-.logoDesc {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1vw;
-  margin-left: 15px;
-  margin-top: -0.2px;
-}
-
-.buttonContainer {
+.row-1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 30%;
 }
 
-.linkButton {
-  padding: 10px;
+.facebookIcon {
+  margin-left: 8px;
+  height: auto;
+  width: 40px;
+  color: #3578e5;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
   border: none;
-  border-radius: 5px;
-  background-color: white;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.2vw;
-  font-weight: 300;
-}
-
-.linkButton:hover {
-  color: #ffc784;
+  background-color: #f0f2f5;
+  border-radius: 25px;
+  width: 55%;
+  height: 40px;
+  align-items: center;
 }
 
 .searchIcon {
-  font-size: 25px;
-  color: #f8e71c;
+  width: 20%;
+  height: 20px;
+  color: #525252;
 }
-.exitIcon {
-  margin-left: 10px;
-  font-size: 25px;
-  color: rgb(59, 89, 152);
+
+.searchInput {
+  width: 75%;
+  height: 18px;
+  background-color: #f0f2f5;
+  border: none;
+  letter-spacing: -0.5px;
+  font-size: 1vw;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  width: 41%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homeIcon,
+.friendIcon,
+.videoIcon,
+.shopIcon,
+.groupIcon {
+  color: gray;
+  height: auto;
+  width: 28px;
+}
+.homeIcon,
+.friendIcon,
+.videoIcon,
+.shopIcon,
+.groupIcon:hover {
+  cursor: pointer;
+}
+
+.iconItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 56px;
+}
+
+.focus {
+  border-bottom: 4px solid #3578e5;
+}
+
+.row-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 27.5%;
+}
+
+.myProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #050505;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.settingsIcon,
+.notificationIcon,
+.messengerIcon,
+.menuIcon {
+  border: solid 0px;
+  margin: 5px;
+  background-color: #e4e6eb;
+}
+.settingsIcon,
+.notificationIcon,
+.messengerIcon,
+.menuIcon:hover {
+  cursor: pointer;
+}
+
+.settingsIcon {
+  height: auto;
+  width: 15px;
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.notificationIcon {
+  height: auto;
+  width: 20px;
+  border-radius: 21px;
+  padding: 10px;
+}
+.messengerIcon {
+  height: auto;
+  width: 18px;
+  border-radius: 21px;
+  padding: 11px;
+}
+
+.menuIcon {
+  height: auto;
+  width: 25px;
+  border-radius: 21px;
+  padding: 8px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 16%;
+  height: 35px;
+  padding: 2px;
+  border-radius: 20px;
+}
+.profile:hover {
+  cursor: pointer;
+  background-color: #e4e6eb;
+}
+.profileName {
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+.profilePic {
+  height: 28px;
+  width: 28px;
+  border-radius: 20px;
+  margin-right: 2px;
+  border: solid 0.5px;
+  border-color: #aeaeae;
 }
